@@ -4,8 +4,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
@@ -20,7 +19,6 @@ import main.najah.code.Recipe;
 import main.najah.code.RecipeBook;
 
 //RecipeBook class test
-//Added lifecycle hooks (no messages because they will appear in wrong order due to parallel excution so only used @BeforeEach to initialize variables)
 //Added parameterized Test (Not very easy to that here so I used if statement to make it work)
 //Added am intentially failing test
 //added timeout test
@@ -34,15 +32,9 @@ class RecipeBookTest {
 	Recipe recipe1;
 	Recipe recipe2;
 	
-    @BeforeAll
-    static void preTestClass() {
-    	System.out.println("RecipeBook Class Tests Are Starting");
-    }
+
+
     
-    @AfterAll
-    static void postTestClass() {
-    	System.out.println("RecipeBook Class Tests Are Done");
-    }
     
     @BeforeEach
     void preTestMethod() {

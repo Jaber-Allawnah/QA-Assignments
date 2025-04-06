@@ -46,7 +46,7 @@ public class Recipe {
 		} else {
 			throw new RecipeException("Units of chocolate must be a positive integer");
 		}
-	}
+	}//done
     /**
 	 * @return   Returns the amtCoffee.
 	 */
@@ -68,7 +68,7 @@ public class Recipe {
 		} else {
 			throw new RecipeException("Units of coffee must be a positive integer");
 		}
-	}
+	}//done
     /**
 	 * @return   Returns the amtMilk.
 	 */
@@ -90,7 +90,7 @@ public class Recipe {
 		} else {
 			throw new RecipeException("Units of milk must be a positive integer");
 		}
-	}
+	}//done
     /**
 	 * @return   Returns the amtSugar.
 	 */
@@ -112,7 +112,7 @@ public class Recipe {
 		} else {
 			throw new RecipeException("Units of sugar must be a positive integer");
 		}
-	}
+	}//done
     /**
 	 * @return   Returns the name.
 	 */
@@ -126,7 +126,7 @@ public class Recipe {
     	if(name != null) {
     		this.name = name;
     	}
-	}
+	}//done
     /**
 	 * @return   Returns the price.
 	 */
